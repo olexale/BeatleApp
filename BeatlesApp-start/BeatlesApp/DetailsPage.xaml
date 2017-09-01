@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="BeatlesApp.DetailsPage" NavigationPage.HasNavigationBar="False">
+
+    <Grid>
+        <Image x:Name="Image" Aspect="AspectFill" />    
+        <StackLayout Padding="40">
+            <Label x:Name="Title" HorizontalTextAlignment="Center" TextColor="White" Font="Bold" FontSize="Large" />
+            <Label x:Name="Bio" TextColor="White" />
+            <Button Text="Back" Clicked="Handle_Back"/>
+        </StackLayout>
+    </Grid>
+</ContentPage>

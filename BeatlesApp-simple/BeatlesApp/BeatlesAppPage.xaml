@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:local="clr-namespace:BeatlesApp" x:Class="BeatlesApp.BeatlesAppPage" NavigationPage.HasNavigationBar="False">
+    <Grid Padding="5">
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+
+        <Image x:Name="TopLeftImage" Aspect="AspectFill" />
+        <Image x:Name="TopRightImage" Aspect="AspectFill" Grid.Row="1" />
+        <Image x:Name="BottomLeftImage" Aspect="AspectFill" Grid.Column="1" />
+        <Image x:Name="BottomRightImage" Aspect="AspectFill" Grid.Row="1" Grid.Column="1" />
+
+        <Label x:Name="TopLeftLabel" VerticalOptions="End" BackgroundColor="#CC00EE00" />
+        <Label x:Name="TopRightLabel" Grid.Row="1" VerticalOptions="End" BackgroundColor="#CC00EE00" />
+        <Label x:Name="BottomLeftLabel" Grid.Column="1" VerticalOptions="End" BackgroundColor="#CC00EE00" />
+        <Label x:Name="BottomRightLabel" Grid.Row="1" Grid.Column="1" VerticalOptions="End" BackgroundColor="#CC00EE00" />
+    </Grid>
+</ContentPage>
